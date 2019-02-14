@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64008274-ba02-40b9-9c15-32153dc25fc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../graphs/histogram/histogram.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../graphs/histogram/histogram.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iPythonNotebooks/anova.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../iPythonNotebooks/anova.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iPythonNotebooks/histogram.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../iPythonNotebooks/histogram.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iPythonNotebooks/t_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../iPythonNotebooks/t_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iPythonNotebooks/violion_plot.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../iPythonNotebooks/violion_plot.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="64008274-ba02-40b9-9c15-32153dc25fc1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +12,12 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="true">
               <entry file="file://$USER_HOME$/Downloads/analysis.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1176">
-                    <caret line="92" column="24" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+                  <state relative-caret-position="-1088">
+                    <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
                     <folding>
                       <element signature="e#65#79#0" expanded="true" />
                     </folding>
@@ -41,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="74">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -63,8 +57,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1" />
-    <option name="y" value="39" />
+    <option name="x" value="277" />
+    <option name="y" value="183" />
     <option name="width" value="1260" />
     <option name="height" value="687" />
   </component>
@@ -143,7 +137,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40674955" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42628774" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -180,13 +174,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
-          <line>46</line>
+          <line>64</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
           <line>43</line>
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -233,8 +237,8 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="92" column="24" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="-1088">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="e#65#79#0" expanded="true" />
           </folding>
@@ -243,8 +247,8 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="74">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

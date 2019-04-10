@@ -2,98 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64008274-ba02-40b9-9c15-32153dc25fc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-25_09-06-59-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-25_09-35-37-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-26_09-19-37-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-26_09-48-34-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-31_09-59-20-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-07-31_10-27-53-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-01_09-04-25-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-01_09-32-21-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-02_10-34-14-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-02_11-03-12-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-03_08-45-09-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-03_09-17-24-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-04_09-43-26-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-04_10-11-34-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-05_08-03-00-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-05_08-41-38-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-06_09-48-52-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-06_10-17-20-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-07_09-17-00-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-08-07_09-58-46-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-09-25_09-51-27-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-09-27_10-22-03-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-09-30_10-25-07-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-01_09-55-35-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-02_09-47-26-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-08_09-43-31-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-14_10-39-15-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-15_09-49-42-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-16_10-28-02-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-17_08-38-34-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-28_10-14-26-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-29_10-13-26-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-10-30_10-10-46-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-06_10-44-31-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-07_10-30-24-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-25_09-23-53-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-26_10-11-44-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-27_10-24-40-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-29_10-04-41-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/DartBoard/results_tim_2018-11-30_06-29-07-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-06-18_11-14-54-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-06-26_08-17-54-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-06-26_09-23-57-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-06-28_09-59-38-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-06-28_10-28-23-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-01_09-58-22-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-01_10-26-21-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-02_09-42-32-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-02_10-10-49-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-07_09-40-04-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-07_10-08-42-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-08_09-50-53-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-08_10-18-49-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-09_09-12-42-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-09_09-40-55-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-10_07-42-43-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-10_08-10-53-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-11_09-21-14-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-11_09-49-40-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-13_08-47-49-PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameObservers/tp/Halloween/resultsHalloween_tim_2018-07-13_09-21-20-PM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameObservers/processed_data.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../GameObservers/processed_data.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figs/Effect of group and difficulty level on stereoacuity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figs/Effect of group and difficulty level on stereoacuity.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/Figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/ah_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/ah_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/aj_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/aj_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/bb_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/bb_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/by_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/by_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/co_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/co_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/dd_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/dd_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/dl_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/dl_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/et_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/et_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/ez_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/ez_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/gn_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/gn_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/gp_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/gp_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/it_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/it_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/jz_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/jz_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/kp_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/kp_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/ky_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/ky_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/ll_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/ll_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/mb_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/mb_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/mg_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/mg_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/ni_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/ni_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/sh_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/sh_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/sm_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/sm_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/sr_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/sr_learningCurve.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/tp_learningCurve.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/figs/tp_learningCurve.jpeg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$USER_HOME$/Downloads/analysis.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="182">
-                    <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-                    <folding>
-                      <element signature="e#65#79#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -109,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+            <state relative-caret-position="1">
+              <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -142,20 +82,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="462" />
-    <option name="y" value="159" />
-    <option name="width" value="1293" />
-    <option name="height" value="687" />
+    <option name="x" value="2267" />
+    <option name="y" value="92" />
+    <option name="width" value="729" />
+    <option name="height" value="452" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
@@ -174,7 +111,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.scratch">
+    <configuration name="violinPlot" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="violinPlot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="violinPlot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -225,7 +179,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15898252" />
@@ -233,15 +187,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4582593" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.50270855" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.37477797" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.47778982" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -276,18 +230,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
-          <line>220</line>
+          <line>279</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
-          <line>110</line>
+          <line>169</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="97" />
+          <line>142</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -300,23 +254,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 03 - Solutions (1).zip/Tests for 2-Sample Data/Lab 03b - Paired t-tests and Non-Parametric Tests.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 03 - Solutions (1).zip/Tests for 2-Sample Data/Lab 03b - Paired t-tests and Non-Parametric Tests - Solutions.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 04 - ANOVA I - Solutions (1).zip/Lab 04 - One-Way ANOVA - Solutions.ipynb" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -373,34 +313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="4369" selection-start-line="4369" selection-end-line="4369" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/frame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6172" selection-start-line="6172" selection-end-line="6172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-          <folding>
-            <element signature="e#65#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../iPythonNotebooks/violion_plot.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
         </state>
       </provider>
     </entry>
@@ -411,10 +327,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Desktop/helpfulCode/lab9_modelSpecification/Lab 08 - Visualizing Models - Solutions.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#65#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../iPythonNotebooks/violion_plot.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="4369" selection-start-line="4369" selection-end-line="4369" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        <state relative-caret-position="1">
+          <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

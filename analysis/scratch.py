@@ -170,7 +170,7 @@ for sub in subjects:
 
     plt.show()
 
-    name = sub+"_learningCurve.jpeg"
+    name = sub+"_learningCurve.png"
     plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=None)
     plt.clf()
 

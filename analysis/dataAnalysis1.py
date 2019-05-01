@@ -128,7 +128,7 @@ def addNormalizer():
         for diff in difficulties:
             saLogArray = df.saLog[(df.subject==sub) & (df.difficulty==diff)]
             normalizer = normDf.normalizer[(normDf.subject==sub) & (normDf.difficulty==diff)]
-            normalized = np.divide(saLogArray, normalizer)
+            normalized = np.divide(saLogArray, normalizer).tolist()
             normData.append(normalized)
 
             subject1 = [sub] * len(normalized)
@@ -139,7 +139,7 @@ def addNormalizer():
             difficulty1 = pd.Series(difficulty1)
             difficulty.append(difficulty1)
 
-            df['normalized']
+            #df['normalized']
 
     return normData, subject, difficulty
 normData, normDataSub, normDataDiff  = addNormalizer()
@@ -199,92 +199,92 @@ plt.show()
 name = "Effect of group and difficulty level on stereoacuity.jpeg"
 plt.savefig(fname=results_dir + name, bbox_inches='tight', format='pdf', dpi=1000)
 
-allData = allData.ix[(allData['hit']== True) & (allData['stereoacuity'] > 50)]
-
-#For some reason, this gives me wrong dof..
-ols_lm = smf.ols('stereoacuity ~ difficulty * group', data=allData)
-fit = ols_lm.fit()
-anov_table = sm.stats.anova_lm(fit, typ=2)
-anov_table
-
-def computeP(fValue, df_diff, df_group):
-    fDistribution = scipy.stats.f
-    p = 1 - fDistribution.cdf(fValue, df_diff, df_group)
-    return p
-
-##Hard Way
-#Calculate 2-way anova
-# DEGREES OF FREEDOM
-N = len(allData['stereoacuity'])
-df_diff = len(allData['difficulty'].unique()) - 1
-df_group = len(allData['group'].unique()) - 1
-df_diffxgroup = df_diff*df_group
-df_w = N - (len(allData['Difficulty'].unique())*len(allData['group'].unique()))
-
-anovaFrame = allData.drop(columns=['SA[seconds] dart location', 'dichoptic errors', 'distance[m]', 'subject'])
-
-# SUMS OF SQUARES
-dataMean = anovaFrame['stereoacuity'].mean()
-groupMeans = anovaFrame.groupby('group').stereoacuity.mean()
-diffMeans = anovaFrame.groupby('difficulty').stereoacuity.mean()
-groupXdiffMeans = anovaFrame.groupby(['group', 'difficulty']).stereoacuity.mean()
-
-anovaFrame["meanEffect"] = dataMean
-group = allData.group.unique()
-
-for g in group:
-    selector = (anovaFrame.group == g)
-    anovaFrame.loc[selector, "groupMainEffect"] = groupMeans.loc[g]- dataMean
-
-for diff in difficulties:
-    selector = (anovaFrame.Difficulty == diff)
-    anovaFrame.loc[selector, "difficultyMainEffect"] = diffMeans.loc[diff] - dataMean
-
-for g in group:
-    for diff in difficulties:
-        selector = (anovaFrame.Difficulty == diff) & (anovaFrame.group == g)
-        anovaFrame.loc[selector, "interactionEffect"] = groupXdiffMeans.loc[g, diff] - anovaFrame.groupMainEffect[selector] - anovaFrame.difficultyMainEffect[selector] - dataMean
-
-# ERROR/RESIDUAL
-anovaFrame['residual'] = anovaFrame.stereoacuity - anovaFrame.meanEffect - anovaFrame.groupMainEffect - anovaFrame.difficultyMainEffect - anovaFrame.interactionEffect
-anovaFrame.sample(10)
-
-# SUMS OF SQUARES
-def SS(x):
-    return np.sum(np.square(x))
-
-sumofSquares = {}
-keys = ['total', 'mean', 'group', 'difficulty', 'interaction', 'residual']
-columns = [anovaFrame.stereoacuity, anovaFrame.meanEffect, anovaFrame.groupMainEffect, anovaFrame.difficultyMainEffect, anovaFrame.interactionEffect, anovaFrame.residual]
-for key, column, in zip(keys, columns):
-    sumofSquares[key] = SS(column)
-sumofSquares
-
-# Calculate degrees of freedom for sums of squares and  store it into a dictionary
-dof = {}
-vals = [N, 1, len(difficulties)-1, len(group)-1, (len(difficulties)*len(group)-1), N-len(group)*len(difficulties)]
-for key, val in zip(keys, vals):
-    dof[key] = val
-dof
-
-# Using the dictionaries "sumsofSquares" and "dof", compute the mean square values dor all of the keyed quantities
-meanSquare = {}
-for key in keys:
-    meanSquare[key] = sumofSquares[key]/dof[key]
-meanSquare
-
-# Compute the F statistic for each main effect and interaction
-F = {}
-for key in ['group', 'difficulty', 'interaction']:
-    F[key] = meanSquare[key]/meanSquare['residual']
-F
-
-#Compute p value using scipy.stats.f.cdf
-for effect in F.keys():
-    print(effect)
-    print("\t"+str(computeP(F[effect], dof[effect], dof['residual'])))
-
-anov_table
+# allData = allData.ix[(allData['hit']== True) & (allData['stereoacuity'] > 50)]
+#
+# #For some reason, this gives me wrong dof..
+# ols_lm = smf.ols('stereoacuity ~ difficulty * group', data=allData)
+# fit = ols_lm.fit()
+# anov_table = sm.stats.anova_lm(fit, typ=2)
+# anov_table
+#
+# def computeP(fValue, df_diff, df_group):
+#     fDistribution = scipy.stats.f
+#     p = 1 - fDistribution.cdf(fValue, df_diff, df_group)
+#     return p
+#
+# ##Hard Way
+# #Calculate 2-way anova
+# # DEGREES OF FREEDOM
+# N = len(allData['stereoacuity'])
+# df_diff = len(allData['difficulty'].unique()) - 1
+# df_group = len(allData['group'].unique()) - 1
+# df_diffxgroup = df_diff*df_group
+# df_w = N - (len(allData['Difficulty'].unique())*len(allData['group'].unique()))
+#
+# anovaFrame = allData.drop(columns=['SA[seconds] dart location', 'dichoptic errors', 'distance[m]', 'subject'])
+#
+# # SUMS OF SQUARES
+# dataMean = anovaFrame['stereoacuity'].mean()
+# groupMeans = anovaFrame.groupby('group').stereoacuity.mean()
+# diffMeans = anovaFrame.groupby('difficulty').stereoacuity.mean()
+# groupXdiffMeans = anovaFrame.groupby(['group', 'difficulty']).stereoacuity.mean()
+#
+# anovaFrame["meanEffect"] = dataMean
+# group = allData.group.unique()
+#
+# for g in group:
+#     selector = (anovaFrame.group == g)
+#     anovaFrame.loc[selector, "groupMainEffect"] = groupMeans.loc[g]- dataMean
+#
+# for diff in difficulties:
+#     selector = (anovaFrame.Difficulty == diff)
+#     anovaFrame.loc[selector, "difficultyMainEffect"] = diffMeans.loc[diff] - dataMean
+#
+# for g in group:
+#     for diff in difficulties:
+#         selector = (anovaFrame.Difficulty == diff) & (anovaFrame.group == g)
+#         anovaFrame.loc[selector, "interactionEffect"] = groupXdiffMeans.loc[g, diff] - anovaFrame.groupMainEffect[selector] - anovaFrame.difficultyMainEffect[selector] - dataMean
+#
+# # ERROR/RESIDUAL
+# anovaFrame['residual'] = anovaFrame.stereoacuity - anovaFrame.meanEffect - anovaFrame.groupMainEffect - anovaFrame.difficultyMainEffect - anovaFrame.interactionEffect
+# anovaFrame.sample(10)
+#
+# # SUMS OF SQUARES
+# def SS(x):
+#     return np.sum(np.square(x))
+#
+# sumofSquares = {}
+# keys = ['total', 'mean', 'group', 'difficulty', 'interaction', 'residual']
+# columns = [anovaFrame.stereoacuity, anovaFrame.meanEffect, anovaFrame.groupMainEffect, anovaFrame.difficultyMainEffect, anovaFrame.interactionEffect, anovaFrame.residual]
+# for key, column, in zip(keys, columns):
+#     sumofSquares[key] = SS(column)
+# sumofSquares
+#
+# # Calculate degrees of freedom for sums of squares and  store it into a dictionary
+# dof = {}
+# vals = [N, 1, len(difficulties)-1, len(group)-1, (len(difficulties)*len(group)-1), N-len(group)*len(difficulties)]
+# for key, val in zip(keys, vals):
+#     dof[key] = val
+# dof
+#
+# # Using the dictionaries "sumsofSquares" and "dof", compute the mean square values dor all of the keyed quantities
+# meanSquare = {}
+# for key in keys:
+#     meanSquare[key] = sumofSquares[key]/dof[key]
+# meanSquare
+#
+# # Compute the F statistic for each main effect and interaction
+# F = {}
+# for key in ['group', 'difficulty', 'interaction']:
+#     F[key] = meanSquare[key]/meanSquare['residual']
+# F
+#
+# #Compute p value using scipy.stats.f.cdf
+# for effect in F.keys():
+#     print(effect)
+#     print("\t"+str(computeP(F[effect], dof[effect], dof['residual'])))
+#
+# anov_table
 
 #    x = np.arange(0, len(df.loc[df['subject']==sub].date.unique()))
 # for diff in difficulties:

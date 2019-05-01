@@ -7,65 +7,19 @@ import scipy
 
 main_dir = "C:/Users/angie/Git Root/StereoTraining/GameObservers/"
 sub_dir = "/DartBoard/"
-results_dir = "C:/Users/angie/Git Root/StereoTraining/violinPlot/figs/"
+results_dir = "C:/Users/angie/Git Root/StereoTraining/figs/"
 Control = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr'} #10 control
 Anomalous = {'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}  #13 experimental
 obs_set = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr', 'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}
 
-def get_yvals(obs_set):
-    subData = []
-    for obs in obs_set:
-        path = main_dir + obs + sub_dir
-        for data in os.listdir(path):
-            if not data.endswith('.csv'):
-                continue
+# Load variables
+os.chdir('C:/Users/angie/Git Root/StereoTraining/data')
+allData = pd.read_csv('subjectData.csv')
 
-            df = pd.read_csv(path + data)
-            dataf = df
-            dataf['subject'] = obs
-            dataf['date'] = data[11:]
-
-            if obs_set == Anomalous:
-                dataf['group'] = 'Anomalous'
-            elif obs_set == Control:
-                dataf['group'] = 'Control'
-
-            subData.append(dataf)
-    return subData
-
-controlData = get_yvals(Control)
-controlAll = pd.concat(controlData, sort= True)
-
-anolData = get_yvals(Anomalous)
-anolAll = pd.concat(anolData, sort= True)
-
-frames = [controlAll, anolAll]
-allData = pd.concat(frames)
-allData.rename(columns={'SA[seconds] dartboard hit':'stereoacuity', 'Difficulty':'difficulty'}, inplace=True)
-
-grouped = allData.groupby(['group', 'difficulty', 'hit'])
-hitRate = grouped["hit"].count()
-
-grouped2 = allData.groupby(['group', 'difficulty'])
-hitTotal = grouped2['hit'].count()
-
-anolHitRate = hitRate.loc['Anomalous', [1, 2, 3], True] / hitTotal['Anomalous']
-controlHitRate = hitRate.loc['Control', [1, 2, 3], True] / hitTotal['Control']
-
-grouped3 = allData.groupby(['subject', 'difficulty', 'hit'])
-subjectHit = grouped3['hit'].count()
-
-grouped4 = allData.groupby(['subject', 'difficulty'])
-subjectHitTotal = grouped4['hit'].count()
-
-grouped5 = allData.groupby(['subject', 'date', 'difficulty'])
-saMean = grouped5['stereoacuity'].mean()
-saMedian = grouped5['stereoacuity'].median()
+allData = allData.ix[(allData['hit']== True) & (allData['stereoacuity'] > 50)]
 
 subjects = allData.subject.unique()
 difficulties = allData.difficulty.unique()
-
-allData = allData.ix[(allData['hit']== True) & (allData['stereoacuity'] > 50)]
 
 #For some reason, this gives me wrong dof..
 ols_lm = smf.ols('stereoacuity ~ difficulty * group', data=allData)
@@ -149,5 +103,3 @@ F
 for effect in F.keys():
     print(effect)
     print("\t"+str(computeP(F[effect], dof[effect], dof['residual'])))
-
-anov_table

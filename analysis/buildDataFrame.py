@@ -1,5 +1,8 @@
+# Builds all-subjects data frame for DartBoard game.
+
 import pandas as pd
 import os
+import numpy as np
 
 main_dir = "C:/Users/angie/Git Root/StereoTraining/GameObservers/"
 sub_dir = "/DartBoard/"
@@ -37,5 +40,7 @@ anolAll = pd.concat(anolData, sort= True)
 frames = [controlAll, anolAll]
 allData = pd.concat(frames)
 allData.rename(columns={'SA[seconds] dartboard hit':'stereoacuity', 'Difficulty':'difficulty'}, inplace=True)
+allData.drop(columns='dichoptic errors')
 
 allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\subjectData.csv', index=False)
+

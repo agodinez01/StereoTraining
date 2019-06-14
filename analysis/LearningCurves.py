@@ -7,7 +7,7 @@ import matplotlib
 
 main_dir = "C:/Users/angie/Git Root/StereoTraining/GameObservers/"
 sub_dir = "/DartBoard/"
-results_dir = "C:/Users/angie/Git Root/StereoTraining/figs/"
+results_dir = "C:/Users/angie/Git Root/StereoTraining/figs/LearningRaw/"
 Control = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr'} #10 control
 Anomalous = {'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}  #13 experimental
 obs_set = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr', 'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}
@@ -107,6 +107,9 @@ for sub in subjects:
     ax = sns.scatterplot(x='date', y='saMedian', data=df.loc[df['subject'] == sub],
                          hue='difficulty', palette=sns.color_palette('colorblind', n_colors=3), alpha=.85)
     ax.set_yscale('log')
+    ax.set_ylim(50, 850)
+    ax.set_yticks([100, 300, 500, 800])
+    ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
 
     ax.plot(x, fit_params_poly[0](x), '-')
     ax.plot(x, fit_params_poly[1](x), '-')
@@ -115,11 +118,13 @@ for sub in subjects:
     ax.plot(x, fit_params_linear[1](x), '--', color='#F0E68C')
     ax.plot(x, fit_params_linear[2](x), '--', color='#66CDAA')
 
-
     ax.set(xticklabels=np.arange(1, len(df.loc[df['subject'] == sub].date.unique()), step=10),
-            xlabel='Session number', ylabel='Normalized')
+            xlabel='Session number', ylabel='In-game stereoacuity (arc secs)')
     #plt.yticks(np.arange(-0.5, 1, step=0.5))
+    #plt.ylim(50, 850)
+    #plt.yticks(np.arange(50, 850, step=150))
     plt.xticks(np.arange(0, len(df.loc[df['subject'] == sub].date.unique()), step=10))
+    plt.title("Learning curve: " + sub.upper())
 
     L = plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize='xx-small')
     L.get_texts()[0].set_text('Difficulty')
@@ -127,15 +132,13 @@ for sub in subjects:
     L.get_texts()[2].set_text('Advanced')
     L.get_texts()[3].set_text('Expert')
 
-    plt.text(0.9, -0.35, 'Chi sq: ' + chi_squared_poly[0], fontsize=8, color='#0086b3')
-    plt.text(12, -0.35, 'Chi sq Linear: ' + chi_squared_linear[0], fontsize=8, color='#33ccff')
-    plt.text(0.9, -0.4, 'Chi sq: ' + chi_squared_poly[1], fontsize=8, color='#ffbf00')
-    plt.text(12, -0.4, 'Chi sq Linear: ' + chi_squared_linear[1], fontsize=8, color='#F0E68C')
-    plt.text(0.9, -0.45, 'Chi sq: ' + chi_squared_poly[2], fontsize=8, color='#008000')
-    plt.text(12, -0.45, 'Chi sq Linear: ' + chi_squared_linear[2], fontsize=8, color='#66CDAA')
+    plt.text(0.9, 90, 'Chi sq: ' + chi_squared_poly[0], fontsize=8, color='#0086b3')
+    plt.text(12, 90, 'Chi sq Linear: ' + chi_squared_linear[0], fontsize=8, color='#33ccff')
+    plt.text(0.9, 80, 'Chi sq: ' + chi_squared_poly[1], fontsize=8, color='#ffbf00')
+    plt.text(12, 80, 'Chi sq Linear: ' + chi_squared_linear[1], fontsize=8, color='#F0E68C')
+    plt.text(0.9, 70, 'Chi sq: ' + chi_squared_poly[2], fontsize=8, color='#008000')
+    plt.text(12, 70, 'Chi sq Linear: ' + chi_squared_linear[2], fontsize=8, color='#66CDAA')
 
-    plt.show()
-
-            #name = sub + "_NormalizedLearningCurve.png"
-           # plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=300)
+    name = sub + "_LearningCurve.png"
+    plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=300)
     plt.clf()

@@ -7,8 +7,8 @@ import numpy as np
 main_dir = "C:/Users/angie/Git Root/StereoTraining/GameObservers/"
 sub_dir = "/DartBoard/"
 Control = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr'} #10 control
-Anomalous = {'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}  #13 experimental
-obs_set = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr', 'bb', 'by', 'co', 'et', 'gn', 'gp', 'jz', 'kp', 'ky', 'mb', 'mg', 'ni', 'tp'}
+Anomalous = {'bb', 'by', 'co', 'et', 'jz', 'kp', 'ky', 'mb', 'mg', 'tp'}  #13 experimental
+obs_set = {'ah', 'aj', 'dd', 'dl', 'ez', 'it', 'll', 'sh', 'sm', 'sr', 'bb', 'by', 'co', 'et', 'jz', 'kp', 'ky', 'mb', 'mg', 'tp'}
 
 def get_yvals(obs_set):
     subData = []
@@ -41,6 +41,7 @@ frames = [controlAll, anolAll]
 allData = pd.concat(frames)
 allData.rename(columns={'SA[seconds] dartboard hit':'stereoacuity', 'Difficulty':'difficulty'}, inplace=True)
 allData.drop(columns='dichoptic errors')
+allData['saLog'] = np.log10(allData.stereoacuity)
 
 allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\subjectData.csv', index=False)
 

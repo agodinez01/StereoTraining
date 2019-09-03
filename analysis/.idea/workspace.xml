@@ -2,8 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18aa0cf9-ef9b-495b-904b-3d999910ea25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scratch_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearningCurves.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearningCurves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildDataFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/buildDataFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupByDifficultyANOVA.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupByDifficultyANOVA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/subjectData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/subjectData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/ah_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/aj_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/bb_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/by_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/co_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/dd_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/dl_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/et_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/ez_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/gn_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/gp_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/it_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/jz_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/kp_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/ky_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/ll_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/mb_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/mg_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/ni_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/sh_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/sm_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/sr_NormalizedLearningCurve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../figs/tp_NormalizedLearningCurve.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,37 +38,154 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LearningCurves.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/normalizeAnalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="221" column="6" lean-forward="true" selection-start-line="221" selection-start-column="6" selection-end-line="221" selection-end-column="49" />
-              <folding>
-                <element signature="e#216#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.52937824">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/normalizeAnalysis.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3009">
+                  <caret line="183" column="44" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#216#235#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LearningCurves.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-201">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/groupByDifficultyANOVA.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildDataFrame.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="392">
+                  <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Box/RecoverStereoVR-Oculus/analysis/data/LeviLabDataAnalysis/iPythonNotebooks/rds_to_csv.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Box/RecoverStereoVR-Oculus/analysis/data/LeviLabDataAnalysis/iPythonNotebooks/randdot.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="0" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="935">
+                  <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scratch_1.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="409">
+                  <caret line="37" selection-start-line="37" selection-end-line="37" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 05 - ANOVA II - Solutions.zip/Lab 05a - Two-Way ANOVA - Solutions.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vergenceChange.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="459">
+                  <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="731">
+                  <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/accommodationAnalysis.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="782">
+                  <caret line="52" column="31" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>allData</find>
       <find>mean</find>
+      <find>stereoacuity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -53,23 +196,25 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-        <option value="$PROJECT_DIR$/groupByDifficultyANOVA.py" />
         <option value="$PROJECT_DIR$/dataAnalysis1.py" />
-        <option value="$PROJECT_DIR$/buildDataFrame.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/normalizeAnalysis.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py" />
         <option value="$PROJECT_DIR$/LearningCurves.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/accommodationAnalysis.py" />
+        <option value="$PROJECT_DIR$/scratch_1.py" />
+        <option value="$PROJECT_DIR$/buildDataFrame.py" />
+        <option value="$PROJECT_DIR$/groupByDifficultyANOVA.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1103" />
+    <option name="x" value="2695" />
+    <option name="y" value="121" />
+    <option name="width" value="710" />
+    <option name="height" value="373" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,7 +247,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vrOculomotorChanges/analysis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -123,28 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LearningCurves">
-    <configuration name="LearningCurves" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LearningCurves.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.groupByDifficultyANOVA">
     <configuration name="accommodationAnalysis" type="PythonConfigurationType" factoryName="Python">
       <module name="analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,6 +332,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="groupByDifficultyANOVA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/groupByDifficultyANOVA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="normalizeAnalysis" type="PythonConfigurationType" factoryName="Python">
       <module name="analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,7 +374,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="scratch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,7 +386,28 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\angie\.PyCharmCE2018.3\config\scratches\phoriaAnalysis.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,34 +458,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vrOculomotorAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../vrOculomotorChanges/analysis" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LearningCurves" />
-        <item itemvalue="Python.vrOculomotorAnalysis" />
-        <item itemvalue="Python.scratch_1" />
-        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.groupByDifficultyANOVA" />
         <item itemvalue="Python.buildDataFrame" />
+        <item itemvalue="Python.scratch_1 (1)" />
+        <item itemvalue="Python.scratch_1" />
+        <item itemvalue="Python.scratch (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -336,23 +481,33 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11703822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.075421944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28342247" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36541888" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33767644" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.28555918" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.36185384" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3615635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -390,6 +545,16 @@
           <line>21</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_1.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/groupByDifficultyANOVA.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -399,51 +564,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="normData" />
-        <watch expression="normDataDiff" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4375" selection-start-line="4375" selection-end-line="4375" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7401" selection-start-line="7401" selection-end-line="7401" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 08 - Visualizing Models - Solutions (1).zip/Lab 08 - Visualizing Models - Solutions.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 09 - Fitting Models - Solutions (1).zip/Lab 09 - Fitting Models - Solutions.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 10 - Model Accuracy and Reliability (1).zip/Lab 10 - Model Accuracy and Reliability.ipynb" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/accommodationAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorMyopiaAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
@@ -458,26 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1861">
           <caret line="255" column="49" selection-start-line="255" selection-start-column="48" selection-end-line="255" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vergenceChange.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupByDifficultyANOVA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -505,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildDataFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="44" column="90" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/phoriaAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -522,20 +620,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/reshape/concat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="4369" selection-start-line="4369" selection-end-line="4369" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="3105" selection-start-line="3105" selection-end-line="3105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/violinPlot/Lib/site-packages/seaborn/relational.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="1327" selection-start-line="1327" selection-end-line="1327" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/normalizeAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="221" column="6" lean-forward="true" selection-start-line="221" selection-start-column="6" selection-end-line="221" selection-end-column="49" />
+        <state relative-caret-position="3009">
+          <caret line="183" column="44" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
           <folding>
             <element signature="e#216#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Box/RecoverStereoVR-Oculus/analysis/data/LeviLabDataAnalysis/iPythonNotebooks/randdot.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vergenceChange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../vrOculomotorChanges/analysis/vrOculomotorAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/accommodationAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Box/RecoverStereoVR-Oculus/analysis/data/LeviLabDataAnalysis/iPythonNotebooks/rds_to_csv.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LearningCurves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+        <state relative-caret-position="-201">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildDataFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Lab 05 - ANOVA II - Solutions.zip/Lab 05a - Two-Way ANOVA - Solutions.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupByDifficultyANOVA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

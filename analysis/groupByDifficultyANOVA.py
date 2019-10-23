@@ -59,18 +59,23 @@ df_w = N - (len(allData['difficulty'].unique())*len(allData['group'].unique()))
 
 anovaFrame = allData.drop(columns=['SA[seconds] dart location', 'dichoptic errors', 'distance[m]', 'subject'])
 
-# SUMS OF SQUARES
-dataMean = anovaFrame['saLog'].mean()
-groupMeans = anovaFrame.groupby('group').saLog.mean()
-print('group means:')
+
+print('MEANS')
+dataMean = anovaFrame['stereoacuity'].mean()
+groupMeans = anovaFrame.groupby('group').stereoacuity.mean()
 print(groupMeans)
-diffMeans = anovaFrame.groupby('difficulty').saLog.mean()
-print('Difficulty means')
+diffMeans = anovaFrame.groupby('difficulty').stereoacuity.mean()
 print(diffMeans)
-groupXdiffMeans = anovaFrame.groupby(['group', 'difficulty']).saLog.mean()
-print('interaction means')
+groupXdiffMeans = anovaFrame.groupby(['group', 'difficulty']).stereoacuity.mean()
 print(groupXdiffMeans)
 
+print("STANDARD DEVIATION")
+groupSD = anovaFrame.groupby('group').stereoacuity.std()
+diffSD = anovaFrame.groupby('difficulty').stereoacuity.std()
+#groupXdiffSEMS = anovaFrame.groupby(['group', 'difficulty']).stereoacuity.std()
+print(groupSD, diffSD)
+
+# SUMS OF SQUARES
 anovaFrame["meanEffect"] = dataMean
 group = allData.group.unique()
 
@@ -103,12 +108,12 @@ for key, column, in zip(keys, columns):
 print('Sums of Squares: ')
 print(sumofSquares)
 
-def geoMean(data_set):
-    data_length = len(data_set)
-    geometricMean = pow(np.prod(data_set), 1/data_length)
-    return geometricMean
-
-geoAnolMean = geoMean(anovaFrame.stereoacuity[anovaFrame.group == 'Control'])
+# def geoMean(data_set):
+#     data_length = len(data_set)
+#     geometricMean = pow(np.prod(data_set), 1/data_length)
+#     return geometricMean
+#
+# geoAnolMean = geoMean(anovaFrame.stereoacuity[anovaFrame.group == 'Control'])
 
 # Calculate degrees of freedom for sums of squares and  store it into a dictionary
 dof = {}

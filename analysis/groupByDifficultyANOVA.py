@@ -4,6 +4,9 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import numpy as np
 import scipy
+from statsmodels.stats.multicomp import (pairwise_tukeyhsd, MultiComparison)
+
+#from statsmodels import (pairwise_tukeyhsd, MultiComparison)
 
 main_dir = "C:/Users/angie/Git Root/StereoTraining/GameObservers/"
 sub_dir = "/DartBoard/"
@@ -18,11 +21,18 @@ allData = pd.read_csv('subjectData.csv')
 
 allData = allData.ix[(allData['hit']== True) & (allData['stereoacuity'] > 50)]
 
+allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\DartBoardAll.csv', index=False)
+
 subjects = allData.subject.unique()
 difficulties = allData.difficulty.unique()
 
+# allData = pd.read_csv('dartBoardMedians.csv')
+# subjects = allData.subject.unique()
+# difficulties = allData.difficulty.unique()
+
 #For some reason, this gives me wrong dof..
-ols_lm = smf.ols('saLog ~ difficulty * group', data=allData)
+#ols_lm = smf.ols('stereoacuity ~ difficulty * group', data=allData)
+ols_lm = smf.ols('stereoacuity ~ difficulty * group', data=allData)
 fit = ols_lm.fit()
 table = sm.stats.anova_lm(fit, typ=2)
 print(table)
@@ -51,14 +61,15 @@ print(anovaFrame.sample(10))
 ##Hard Way
 #Calculate 2-way anova
 # DEGREES OF FREEDOM
-N = len(allData['saLog'])
+
+N = len(allData['stereoacuity'])
 df_diff = len(allData['difficulty'].unique()) - 1
 df_group = len(allData['group'].unique()) - 1
 df_diffxgroup = df_diff*df_group
 df_w = N - (len(allData['difficulty'].unique())*len(allData['group'].unique()))
 
 anovaFrame = allData.drop(columns=['SA[seconds] dart location', 'dichoptic errors', 'distance[m]', 'subject'])
-
+#anovaFrama = allData.drop(columns=['subject', 'condition', 'saMedianPre', 'saMedianPost'])
 
 print('MEANS')
 dataMean = anovaFrame['stereoacuity'].mean()
@@ -93,7 +104,7 @@ for g in group:
         anovaFrame.loc[selector, "interactionEffect"] = groupXdiffMeans.loc[g, diff] - anovaFrame.groupMainEffect[selector] - anovaFrame.difficultyMainEffect[selector] - dataMean
 
 # ERROR/RESIDUAL
-anovaFrame['residual'] = anovaFrame.saLog - anovaFrame.meanEffect - anovaFrame.groupMainEffect - anovaFrame.difficultyMainEffect - anovaFrame.interactionEffect
+anovaFrame['residual'] = anovaFrame.stereoacuity - anovaFrame.meanEffect - anovaFrame.groupMainEffect - anovaFrame.difficultyMainEffect - anovaFrame.interactionEffect
 print(anovaFrame.sample(10))
 
 # SUMS OF SQUARES
@@ -102,7 +113,7 @@ def SS(x):
 
 sumofSquares = {}
 keys = ['total', 'mean', 'group', 'difficulty', 'interaction', 'residual']
-columns = [anovaFrame.saLog, anovaFrame.meanEffect, anovaFrame.groupMainEffect, anovaFrame.difficultyMainEffect, anovaFrame.interactionEffect, anovaFrame['residual']]
+columns = [anovaFrame.stereoacuity, anovaFrame.meanEffect, anovaFrame.groupMainEffect, anovaFrame.difficultyMainEffect, anovaFrame.interactionEffect, anovaFrame['residual']]
 for key, column, in zip(keys, columns):
     sumofSquares[key] = SS(column)
 print('Sums of Squares: ')
@@ -146,5 +157,26 @@ print(F)
 for effect in F.keys():
     print(effect)
     print("\t"+str(computeP(F[effect], dof[effect], dof['residual'])))
+
+## Multiple Comparison Tukeys test ##
+#Example taken from: https://pythonhealthcare.org/2018/04/13/55-statistics-multi-comparison-with-tukeys-test-and-the-holm-bonferroni-method/
+
+#Set up data for comparison
+
+# df2.DataFrame()
+# df2['stereo-anomalous_1'] = group1
+# df2
+# MultiComp = MultiComparison(stacked_data['result'], stacked_data['treatment'])
+
+#MultiComparison.tukeyhsd(table)
+
+mc = MultiComparison(allData['saLog'], allData['difficulty'])
+mc_results = mc.tukeyhsd()
+print(mc_results)
+
+mc2 = MultiComparison(allData['saLog'], allData['group'])
+mc2_results = mc2.tukeyhsd()
+print(mc2_results)
+
 
 allData

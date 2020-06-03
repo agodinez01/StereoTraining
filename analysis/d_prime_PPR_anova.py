@@ -16,7 +16,7 @@ normalSD = np.var(importData.PPR[importData['group']=='normal'])
 anomalousSD = np.var(importData.PPR[importData['group']=='anomalous'])
 
 aov = importData.anova(dv='PPR', between=['group', 'level', 'sa'], ss_type=3)
-aov
+print(aov)
 
 #Bonferroni correction
 pvals = [0.00003, 0.40907, 0.00578, 0.98322, 0.00929, 0.78624, 0.88409]
@@ -26,5 +26,5 @@ print(reject, pvals_corr)
 a = importData.PPR[importData.group == 'normal']
 b = importData.PPR[importData.group == 'anomalous']
 
-hist = a.hist()
+hist = b.hist()
 plt.show()

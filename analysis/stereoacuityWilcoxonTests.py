@@ -21,16 +21,47 @@ stereoData = pd.read_csv('stereoTests.csv')
 # Define lists
 subjects = stereoData.subject.unique()
 
-clinicalPre = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'pre') &
-                               ((stereoData.test == 'randot') | (stereoData.test == 'random3'))].tolist()
-clinicalPost = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'post') &
-                                ((stereoData.test == 'randot') | (stereoData.test == 'random3'))].tolist()
-stat, p = scipy.stats.wilcoxon(clinicalPre, clinicalPost)
+stereoPreAnol = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'pre')].tolist()
+stereoPostAnol = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'post')].tolist()
 
-computerPre = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'pre') &
-                               ((stereoData.test == 'pdt') | (stereoData.test == 'drsS') | (stereoData.test == 'drsM') | (stereoData.test == 'drsB'))].tolist()
-computerPost = stereoData.value[(stereoData.group == 'anomalous') & (stereoData.order == 'post') &
-                                ((stereoData.test == 'pdt') | (stereoData.test == 'drsS') | (stereoData.test == 'drsM') | (stereoData.test == 'drsB'))].tolist()
-stat2, p2 = scipy.stats.wilcoxon(computerPre, computerPost)
+sns.distplot(stereoPreAnol, color='blue')
+sns.distplot(stereoPostAnol, color='red')
+#plt.hist(stereoPostAnol, color='red')
+#plt.hist(stereoPreAnol, color='blue')
+plt.show()
+plt.clf()
+
+preAnolSA = np.mean(np.array(stereoPreAnol))
+preAnolSD = np.std(np.array(stereoPreAnol))
+print('Pre anomalous SA: ')
+print(preAnolSA)
+print(preAnolSD)
+postAnolSA = np.mean(np.array(stereoPostAnol))
+postAnolSD = np.std(np.array(stereoPostAnol))
+print('Post anomalous SA: ')
+print(postAnolSA)
+print(postAnolSD)
+
+stat, p = scipy.stats.wilcoxon(stereoPreAnol, stereoPostAnol)
+
+stereoPreNor = stereoData.value[(stereoData.group == 'control') & (stereoData.order == 'pre')].tolist()
+stereoPostNor = stereoData.value[(stereoData.group == 'control') & (stereoData.order == 'post')].tolist()
+
+sns.distplot(stereoPreNor, color='blue')
+sns.distplot(stereoPostNor, color='red')
+plt.show()
+
+preNorSA = np.mean(np.array(stereoPreNor))
+preNorSD = np.std(np.array(stereoPreNor))
+print('Pre normal SA: ')
+print(preNorSA)
+print(preNorSD)
+postNorSA = np.mean(np.array(stereoPostNor))
+postNorSD = np.std(np.array(stereoPreNor))
+print('Post normal SA: ')
+print(postAnolSA)
+print(postNorSD)
+
+statN, pN = scipy.stats.wilcoxon(stereoPreNor, stereoPostNor)
 
 stereoData

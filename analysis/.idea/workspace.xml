@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18aa0cf9-ef9b-495b-904b-3d999910ea25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py" beforeDir="false" afterPath="$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/cs_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../data/cs_data.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="18aa0cf9-ef9b-495b-904b-3d999910ea25" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34040403">
+    <splitter split-orientation="horizontal" split-proportion="0.51582736">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/d_pime_Halloween_PPR.py">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1343">
-                  <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="43" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -28,10 +25,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/d_prime_PPR_anova.py">
+            <entry file="file://$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+                <state relative-caret-position="-202">
+                  <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -40,10 +37,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
+            <entry file="file://$PROJECT_DIR$/scratch_1.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1496">
-                  <caret line="88" selection-start-line="88" selection-end-line="88" />
+                <state relative-caret-position="-1564">
+                  <caret line="8" selection-start-line="8" selection-end-line="17" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -52,22 +49,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+            <entry file="file://$PROJECT_DIR$/LearningCurves.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="66" selection-start-line="66" selection-end-line="66" />
-                  <folding>
-                    <element signature="e#1#20#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                  <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+                <state relative-caret-position="-136">
+                  <caret line="114" selection-start-line="114" selection-end-line="114" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -78,24 +63,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/buildHalloweenDataFrame.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="87">
-                  <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#0#19#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/cs_analysis.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+                <state relative-caret-position="339">
+                  <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -104,36 +77,12 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dichoptic_errors.py">
+            <entry file="file://$PROJECT_DIR$/halloweenSubSubplots.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="113" column="88" selection-start-line="113" selection-start-column="88" selection-end-line="117" selection-end-column="26" />
+                <state relative-caret-position="1416">
+                  <caret line="259" selection-start-line="258" selection-start-column="5" selection-end-line="259" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-247">
-                  <caret selection-end-line="13" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#0#19#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stereoacuityWilcoxonTests.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="824">
-                  <caret line="53" selection-start-line="53" selection-end-line="53" />
-                  <folding>
-                    <element signature="e#25#44#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -186,21 +135,22 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.py" />
         <option value="$PROJECT_DIR$/d_pime_Halloween_PPR.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/d_prime_PPR_anova.py" />
         <option value="$PROJECT_DIR$/stereoacuityWilcoxonTests.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/cs_analysis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1103" />
+    <option name="x" value="2302" />
+    <option name="y" value="102" />
+    <option name="width" value="1296" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +207,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.d_prime_sa_level_PPR_fig">
+  <component name="RunManager" selected="Python.cs_analysis">
+    <configuration name="LearningCurves" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LearningCurves.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="accommodationAnalysis" type="PythonConfigurationType" factoryName="Python">
       <module name="analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -279,7 +250,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="d_prime_PPR_anova" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cs_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,11 +258,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/d_prime_PPR_anova.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/cs_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -489,34 +460,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stereoacuityWilcoxonTests" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stereoacuityWilcoxonTests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cs_analysis" />
+        <item itemvalue="Python.LearningCurves" />
+        <item itemvalue="Python.scratch_4" />
         <item itemvalue="Python.d_prime_sa_level_PPR_fig" />
         <item itemvalue="Python.scratch_1" />
-        <item itemvalue="Python.stereoacuityWilcoxonTests" />
-        <item itemvalue="Python.d_prime_PPR_anova" />
-        <item itemvalue="Python.scratch_4" />
       </list>
     </recent_temporary>
   </component>
@@ -543,23 +493,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="1912" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21178344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16062802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.09237379" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43926787" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43823844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.2579035" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994726" weight="0.327787" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49841774" weight="0.327787" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49841774" weight="0.32760474" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158226" side_tool="true" weight="0.34961998" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49841774" weight="0.3793677" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49841774" weight="0.3791622" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -651,6 +601,16 @@
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py</url>
           <line>68</line>
           <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/cs_analysis.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LearningCurves.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="261" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -848,16 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/normalizeAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="75" />
-          <folding>
-            <element signature="e#216#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ppr_tc_asymptote_ANOVA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
@@ -865,30 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LearningCurves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="142" column="4" selection-start-line="142" selection-end-line="143" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/halloweenHitRate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratch_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="125" column="58" selection-start-line="125" selection-start-column="58" selection-end-line="125" selection-end-column="58" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -912,30 +842,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/halloweenSubSubplots.py">
+    <entry file="file://$PROJECT_DIR$/d_prime_fig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4335">
-          <caret line="259" selection-start-line="258" selection-start-column="5" selection-end-line="259" />
+        <state relative-caret-position="-1117">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/d_pime_Halloween_PPR.py">
+    <entry file="file://$PROJECT_DIR$/buildHalloweenDataFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="43" />
+        <state relative-caret-position="87">
+          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/dichoptic_errors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="299" column="11" lean-forward="true" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="11" />
+        <state relative-caret-position="85">
+          <caret line="113" column="88" selection-start-line="113" selection-start-column="88" selection-end-line="117" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,6 +878,16 @@
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#25#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d_pime_Halloween_PPR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -969,10 +912,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1564">
+          <caret line="8" selection-start-line="8" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -981,58 +944,65 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d_prime_fig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1117">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buildHalloweenDataFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dichoptic_errors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="113" column="88" selection-start-line="113" selection-start-column="88" selection-end-line="117" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/d_prime_sa_level_PPR_fig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+        <state relative-caret-position="-202">
+          <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/halloweenSubSubplots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="259" selection-start-line="258" selection-start-column="5" selection-end-line="259" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normalizeAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="75" />
+          <folding>
+            <element signature="e#216#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningCurves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/cs_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

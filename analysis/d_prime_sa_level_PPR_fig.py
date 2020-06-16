@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib
 
 main_dir = "C:/Users/angie/Git Root/StereoTraining/data"
 results_dir = "C:/Users/angie/Git Root/StereoTraining/figs/"
@@ -63,6 +64,12 @@ df = pd.DataFrame(d)
 
 plt.clf()
 
+
+font = {'weight': 'bold', 'size': 18}
+matplotlib.rc('font', **font)
+#sns.set('poster')
+sns.set_style('whitegrid')
+
 fig = plt.figure(figsize=(12,5))
 plt.xlabel('Stereoacuity demand (arc secs)')
 
@@ -74,11 +81,12 @@ for level in levels:
     ax = plt.subplot(1, 3, plot_number)
 
     #actual plot
+    #sns.boxplot(x='sa', y='PPR', hue='group', data=df[df.level == level], showfliers=False, palette=plotColors)
     sns.boxplot(x='sa', y='PPR', hue='group', data=df[df.level == level], showfliers=False, palette=plotColors)
     #plt.scatter(x=df.sa[(df.level == level) & (df.group == 'normal')], y=df.PPR[(df.level == level) & (df.group == 'normal')])
     #sns.stripplot(x='sa', y='PPR', hue='condition', data=df[df.level == level], jitter=True, dodge=True, palette=condColors, alpha=0.8)
 
-    sns.stripplot(x='sa', y='PPR', hue='group', data=df[df.level == level], jitter=True, dodge=True, color='grey', alpha=0.75)
+    sns.stripplot(x='sa', y='PPR', hue='group', data=df[df.level == level], jitter=True, dodge=True, color='grey', alpha=0.8)
 
     #sns.swarmplot(x='sa', y='PPR', hue='group', data=df[df.level == level])
 
@@ -111,7 +119,7 @@ L.get_texts()[0].set_text('Stereo-normal')
 L.get_texts()[1].set_text('Stereo-anomalous')
 
 #plt.show()
-plt.savefig(fname=results_dir + 'd_prime_sa_level_PPR.png', bbox_inches='tight', format='png', dpi=300)
+plt.savefig(fname=results_dir + 'd_prime_sa_level_PPR_color.png', bbox_inches='tight', format='png', dpi=300)
 
 
 

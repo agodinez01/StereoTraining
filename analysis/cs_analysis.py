@@ -34,10 +34,13 @@ def getRegressionCoeff(data):
 
 # Plot variables
 plot_number = 1 # Start with first plot
-plot_colors = [['#ff4f42', '#ffb0ab', '#ff1100'], ['#5980ff', '#a1b7ff', '#0039f5'], ['#666666', '#999999', '#333333'], ['#62d96d', '#bdffc3', '#009c0f']]
+plot_colors = [['#ff4f42', '#ffb0ab', '#ff1100'], ['#5980ff', '#a1b7ff', '#0039f5'], ['#666666', '#999999', '#333333'], ['#62d96d', '#bdffc3', '#009c0f']] # Red, blue, grey, green
+plot_markers = ['o', '^', 's'] #OD, OS, OU
 
 for sub in subjects:
+    dominant_eye = []
     data = cs_data.loc[cs_data.id == sub]
+    dominant_eye = data.dominant.tolist()[0]
     y = getRegressionCoeff(data)
     x = data.test_num.unique().tolist()
 
@@ -52,12 +55,12 @@ for sub in subjects:
         plot_palette = plot_colors[2]
 
     ax = plt.subplot(5, 4, plot_number)
-    sns.scatterplot(x='test_num', y='AULCSF', hue='condition', data=data, palette=plot_palette)
+    sns.scatterplot(x='test_num', y='AULCSF', hue='condition', data=data, palette=plot_palette, markers=plot_markers, style='condition', size=14)
 
     # Plot regression
-    ax.plot(x, y[0](x), '--', color=plot_palette[0])
-    ax.plot(x, y[1](x), '--', color=plot_palette[1])
-    ax.plot(x, y[2](x), '--', color=plot_palette[2])
+    ax.plot(x, y[0](x), '--', color=plot_palette[0], linewidth=0.7)
+    ax.plot(x, y[1](x), '--', color=plot_palette[1], linewidth=0.7)
+    ax.plot(x, y[2](x), '--', color=plot_palette[2], linewidth=0.7)
 
     # Add slope to plot
     ax.text(3.5, 2.70, str(y[0]), fontsize=4, color=plot_palette[0])
@@ -71,6 +74,18 @@ for sub in subjects:
     plt.xlim(0.25, 6.25)
     plt.xticks([1, 2, 3, 4, 5, 6])
 
+    # Make non-dominant eye stand out
+    if dominant_eye == 'OD':
+        sns.scatterplot(x='test_num', y='AULCSF', data=data.loc[data.condition == 'OS'], markers=plot_markers[1],
+                        size=16, color='black')
+        ax.plot(x, y[1](x), '--', color='black', linewidth=0.7)
+    elif dominant_eye == 'OS':
+        sns.scatterplot(x='test_num', y='AULCSF', data=data.loc[data.condition == 'OD'], markers=plot_markers[0], size=16,
+                        color='black')
+        ax.plot(x, y[0](x), '--', color='black', linewidth=0.7)
+    elif dominant_eye == 'nan':
+        continue
+
     # Remove labels and legend
     ax.label_outer()
     ax.set_xlabel('')
@@ -80,4 +95,5 @@ for sub in subjects:
     plot_number = plot_number + 1
 
 name = "csf_all.png"
+plt.show()
 plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=300)

@@ -21,6 +21,7 @@ eye_tested = cs_data.condition.unique()
 def getRegressionCoeff(data):
     fit_params_linear = []
     slope = []
+    condition = []
 
     for eye in eye_tested:
         x = data.test_num.unique().tolist()
@@ -30,19 +31,48 @@ def getRegressionCoeff(data):
         equation_linear = np.poly1d(z_linear)
         fit_params_linear.append(equation_linear)
         slope.append(z_linear[0])
+        condition.append(eye)
 
-    return fit_params_linear, slope
+    return fit_params_linear, slope, condition
 
 # Plot variables
 plot_number = 1 # Start with first plot
 plot_colors = [['#ff4f42', '#ff1100', '#ffb0ab'], ['#5980ff', '#0039f5', '#a1b7ff'], ['#666666', '#333333', '#999999'], ['#62d96d', '#009c0f', '#bdffc3']] # Red, blue, grey, green
-plot_markers = ['o', 's', '^'] #dom, non, OU
+plot_markers = ['o', 's', '^'] #DE, NDE, OU
+
+def makeSlopeDF():
+    subVals = []
+    groupVals = []
+    eyeVals = []
+    slope = []
+
+    for sub in subjects:
+        data = cs_data.loc[cs_data.id == sub]
+        group = data.group.tolist()[0]
+
+        y, s, eye = getRegressionCoeff(data)
+
+        subVals.append([sub, sub, sub])
+        groupVals.append([group, group, group])
+        slope.append(s)
+        eyeVals.append(eye)
+
+    return subVals, groupVals, slope, eyeVals
+
+subList, groupList, slopeList, eyeList = makeSlopeDF()
+sub_flat_list = [item for sublist in subList for item in sublist]
+group_flat_list = [item for sublist in groupList for item in sublist]
+eye_flat_list = [item for sublist in eyeList for item in sublist]
+slope_flat_list = [item for sublist in slopeList for item in sublist]
+
+frame = {'subject': sub_flat_list, 'group': group_flat_list, 'eye': eye_flat_list, 'slope': slope_flat_list}
+dataFrame = pd.DataFrame(frame)
 
 for sub in subjects:
 
     data = cs_data.loc[cs_data.id == sub]
 
-    y, slope = getRegressionCoeff(data)
+    y, slope, eye = getRegressionCoeff(data)
     x = data.test_num.unique().tolist()
 
     # Assign color for plots

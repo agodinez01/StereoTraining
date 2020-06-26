@@ -19,8 +19,8 @@ eye_tested = cs_data.condition.unique()
 
 
 def getRegressionCoeff(data):
-    #eye_cond = []
     fit_params_linear = []
+    slope = []
 
     for eye in eye_tested:
         x = data.test_num.unique().tolist()
@@ -29,19 +29,20 @@ def getRegressionCoeff(data):
         z_linear = np.polyfit(x, data.AULCSF[data.condition == eye], 1)
         equation_linear = np.poly1d(z_linear)
         fit_params_linear.append(equation_linear)
+        slope.append(z_linear[0])
 
-    return fit_params_linear
+    return fit_params_linear, slope
 
 # Plot variables
 plot_number = 1 # Start with first plot
-plot_colors = [['#ff4f42', '#ffb0ab', '#ff1100'], ['#5980ff', '#a1b7ff', '#0039f5'], ['#666666', '#999999', '#333333'], ['#62d96d', '#bdffc3', '#009c0f']] # Red, blue, grey, green
-plot_markers = ['o', '^', 's'] #OD, OS, OU
+plot_colors = [['#ff4f42', '#ff1100', '#ffb0ab'], ['#5980ff', '#0039f5', '#a1b7ff'], ['#666666', '#333333', '#999999'], ['#62d96d', '#009c0f', '#bdffc3']] # Red, blue, grey, green
+plot_markers = ['o', 's', '^'] #dom, non, OU
 
 for sub in subjects:
-    dominant_eye = []
+
     data = cs_data.loc[cs_data.id == sub]
-    dominant_eye = data.dominant.tolist()[0]
-    y = getRegressionCoeff(data)
+
+    y, slope = getRegressionCoeff(data)
     x = data.test_num.unique().tolist()
 
     # Assign color for plots
@@ -63,9 +64,9 @@ for sub in subjects:
     ax.plot(x, y[2](x), '--', color=plot_palette[2], linewidth=0.7)
 
     # Add slope to plot
-    ax.text(3.5, 2.70, str(y[0]), fontsize=4, color=plot_palette[0])
-    ax.text(3.5, 2.50, str(y[1]), fontsize=4, color=plot_palette[1])
-    ax.text(3.5, 2.30, str(y[2]), fontsize=4, color=plot_palette[2])
+    ax.text(3.5, 2.70, str('DE: ') + str(f"{slope[0]:.2f}"), fontsize=4, color=plot_palette[0])
+    ax.text(3.5, 2.50, str('NDE: ') + str(f"{slope[1]:.2f}"), fontsize=4, color=plot_palette[1])
+    ax.text(3.5, 2.30, str('OU: ') + str(f"{slope[2]:.2f}"), fontsize=4, color=plot_palette[2])
     ax.text(0.9, 2.40, str(sub), fontsize=6)
 
     # Set axes params
@@ -73,18 +74,6 @@ for sub in subjects:
     plt.yticks([1.0, 1.5, 2.0])
     plt.xlim(0.25, 6.25)
     plt.xticks([1, 2, 3, 4, 5, 6])
-
-    # Make non-dominant eye stand out
-    if dominant_eye == 'OD':
-        sns.scatterplot(x='test_num', y='AULCSF', data=data.loc[data.condition == 'OS'], markers=plot_markers[1],
-                        size=16, color='black')
-        ax.plot(x, y[1](x), '--', color='black', linewidth=0.7)
-    elif dominant_eye == 'OS':
-        sns.scatterplot(x='test_num', y='AULCSF', data=data.loc[data.condition == 'OD'], markers=plot_markers[0], size=16,
-                        color='black')
-        ax.plot(x, y[0](x), '--', color='black', linewidth=0.7)
-    elif dominant_eye == 'nan':
-        continue
 
     # Remove labels and legend
     ax.label_outer()
@@ -94,6 +83,6 @@ for sub in subjects:
 
     plot_number = plot_number + 1
 
-name = "csf_all.png"
-plt.show()
+name = "csf_all_NDE.png"
+#plt.show()
 plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=300)

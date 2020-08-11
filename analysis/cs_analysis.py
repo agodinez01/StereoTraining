@@ -80,6 +80,9 @@ plot_number = 1 # Start with first plot
 plot_colors = [['#ff4f42', '#ff1100', '#ffb0ab'], ['#5980ff', '#0039f5', '#a1b7ff'], ['#666666', '#333333', '#999999'], ['#62d96d', '#009c0f', '#94fc8b']] # Red, blue, grey, green
 plot_markers = ['o', 's', '^'] #DE, NDE, OU
 
+plt.hist(x=dataFrame.slope)
+#plt.show()
+
 if withImage_anova == 'yes':
     # 2-way ANOVA
     aov = pg.mixed_anova(dv='slope', between='group', within='eye', subject='subject', data=dataFrame)
@@ -109,7 +112,6 @@ if withImage_anova == 'yes':
             plot_palette = plot_colors[2]
 
         ax = plt.subplot(5, 4, plot_number)
-        #sns.lmplot(x='test_num', y='AULCSF', hue='condition', data=data, palette=plot_palette, markers=plot_markers, size=14)
 
         if run_type == 'AULCSF':
             sns.scatterplot(x='test_num', y='AULCSF', hue='condition', data=data, palette=plot_palette, markers=plot_markers, style='condition', size=14)
@@ -126,6 +128,8 @@ if withImage_anova == 'yes':
             plt.yticks([1.0, 1.5, 2.0])
             plt.xlim(0.25, 6.25)
             plt.xticks([1, 2, 3, 4, 5, 6])
+
+            dataFrame.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\AULCSF.csv', index=False)
 
             name = "csf_all_AULCSF.png"
 
@@ -146,6 +150,8 @@ if withImage_anova == 'yes':
             plt.xlim(0.25, 6.25)
             plt.xticks([1, 2, 3, 4, 5, 6])
 
+            dataFrame.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\CSF_acuity.csv', index=False)
+
             name = "csf_acuity.png"
 
         # Plot regression
@@ -163,3 +169,57 @@ if withImage_anova == 'yes':
 
     #plt.show()
     plt.savefig(fname=results_dir + name, bbox_inches='tight', format='png', dpi=300)
+
+for sub in subjects:
+
+    y1, slope1, eye1 = getRegressionCoeff(cs_data.loc[cs_data.id == sub])
+
+    # Assign color for plots
+    if sub[0:3] == 'ASW':
+        plot_palette = plot_colors[3]
+    elif sub[0:2] == 'AS' or sub[0:2] == 'AM':
+        plot_palette = plot_colors[0]
+    elif sub[0:2] == 'AA':
+        plot_palette = plot_colors[1]
+    elif sub[0] == 'N':
+        plot_palette = plot_colors[2]
+
+    if run_type == 'AULCSF':
+        sns.lmplot(x='test_num', y='AULCSF', hue='condition', data=cs_data.loc[cs_data.id == sub], palette=plot_palette, markers=plot_markers, legend=False)
+
+        plt.ylim(0.5, 3.5)
+        plt.yticks([1.0, 2.0, 3.0])
+        plt.xlim(0.0, 6.25)
+        plt.xticks([1, 2, 3, 4, 5, 6])
+
+        # Add slope to plot
+        plt.text(5, 3.40, str('DE: ') + str(f"{slope1[0]:.2f}"), fontsize=12, color=plot_palette[0])
+        plt.text(5, 3.20, str('NDE: ') + str(f"{slope1[1]:.2f}"), fontsize=12, color=plot_palette[1])
+        plt.text(5, 3.0, str('OU: ') + str(f"{slope1[2]:.2f}"), fontsize=12, color=plot_palette[2])
+        plt.text(0.5, 3.30, str(sub), fontsize=18)
+
+        plt.xlabel('')
+        plt.ylabel('')
+
+        plt.savefig(fname=results_dir + 'AULCSF' + sub + '.png', bbox_inches='tight', format='png', dpi=300)
+
+    elif run_type == 'CSF_acuity':
+        sns.lmplot(x='test_num', y='CSF_acuity', hue='condition', data=cs_data.loc[cs_data.id == sub], palette=plot_palette, markers=plot_markers, legend=False)
+
+        # Add slope to plot
+        plt.text(4.5, 46, str('DE: ') + str(f"{slope1[0]:.2f}"), fontsize=12, color=plot_palette[0])
+        plt.text(4.5, 44, str('NDE: ') + str(f"{slope1[1]:.2f}"), fontsize=12, color=plot_palette[1])
+        plt.text(4.5, 42, str('OU: ') + str(f"{slope1[2]:.2f}"), fontsize=12, color=plot_palette[2])
+        plt.text(0.9, 42, str(sub), fontsize=18)
+
+        # Set axes params
+        # Set axes params
+        plt.ylim(0, 50)
+        plt.yticks([0, 10, 20, 30, 40])
+        plt.xlim(0.25, 6.25)
+        plt.xticks([1, 2, 3, 4, 5, 6])
+
+        plt.xlabel('')
+        plt.ylabel('')
+
+        plt.savefig(fname=results_dir + 'CSF_acuity_' + sub + '.png', bbox_inches='tight', format='png', dpi=300)

@@ -3,7 +3,7 @@
 Halloween = "/Halloween/"
 DartBoard = "/DartBoard/"
 
-condition = Halloween
+condition = DartBoard
 
 import pandas as pd
 import os
@@ -52,9 +52,9 @@ allData = pd.concat(frames)
 if condition == DartBoard:
     allData.rename(columns={'SA[seconds] dartboard hit':'stereoacuity', 'Difficulty':'difficulty'}, inplace=True)
     allData['saLog'] = np.log10(allData.stereoacuity)
-    allData = allData.loc[allData.stereoacuity > 50]
+    #allData = allData.loc[allData.stereoacuity > 50]
 
-    allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\subjectData.csv', index=False)
+    allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\round2\data\subjectData_all.csv', index=False)
 
 elif condition == Halloween:
     allData.to_csv(r'C:\Users\angie\Git Root\StereoTraining\data\halloweenSubjectData.csv', index=False)

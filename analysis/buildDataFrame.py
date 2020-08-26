@@ -33,9 +33,9 @@ def get_yvals(obs_set):
                 dataf['date'] = data[20:]
 
             if obs_set == Anomalous:
-                dataf['group'] = 'Anomalous'
+                dataf['group'] = 'anomalous'
             elif obs_set == Control:
-                dataf['group'] = 'Control'
+                dataf['group'] = 'control'
 
             subData.append(dataf)
     return subData

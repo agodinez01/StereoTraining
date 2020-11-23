@@ -65,10 +65,10 @@ df = pd.DataFrame(d)
 plt.clf()
 
 
-font = {'weight': 'bold', 'size': 18}
+font = {'weight': 'normal', 'size': 16}
 matplotlib.rc('font', **font)
 #sns.set('poster')
-sns.set_style('whitegrid')
+sns.set_style('white')
 
 fig = plt.figure(figsize=(12,5))
 plt.xlabel('Stereoacuity demand (arc secs)')
@@ -102,24 +102,26 @@ for level in levels:
     ax.get_legend().remove()
 
     if plot_number == 1:
-        ax.set_ylabel('PPR (post:pre ratio)')
+        ax.set_ylabel('PPR (post:pre ratio)', fontweight='bold')
     elif plot_number == 2:
-        ax.set_xlabel('Stereoacuity (arc secs)')
+        ax.set_xlabel('Stereoacuity (arc secs)', fontweight='bold')
     else:
         ax.set_ylabel('')
 
-    ax.set_title('Level ' + str(plot_number))
+    #ax.set_title('Level ' + str(plot_number))
 
     #Increase the plot number before going through the loop again
     plot_number = plot_number + 1
 
 
-L = plt.legend(bbox_to_anchor=(1, 0.95), loc=2, borderaxespad=0, prop={'size':10}, frameon=False)
+L = plt.legend(bbox_to_anchor=(1, 0.95), loc=2, borderaxespad=0, prop={'size':12}, frameon=False)
 L.get_texts()[0].set_text('Stereo-normal')
 L.get_texts()[1].set_text('Stereo-anomalous')
+L.get_texts()[2].set_text('')
+L.get_texts()[3].set_text('')
 
 #plt.show()
-plt.savefig(fname=results_dir + 'd_prime_sa_level_PPR_color.png', bbox_inches='tight', format='png', dpi=300)
+plt.savefig(fname=results_dir + 'd_prime_sa_level_PPR_2.png', bbox_inches='tight', format='png', dpi=300)
 
 
 
